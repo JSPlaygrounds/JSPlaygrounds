@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "js-playgrounds",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSPlaygrounds/JSPlaygrounds.git"
+  },
+  "author": "Treovr Huey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSPlaygrounds/JSPlaygrounds/issues"
+  },
+  "homepage": "https://github.com/JSPlaygrounds/JSPlaygrounds#readme"
+}
