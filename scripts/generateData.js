@@ -19,3 +19,7 @@ const data = playgrounds.map((playground) => {
     description: config.description,
   };
 });
+
+const dest = path.join(__dirname, '..', 'out', 'static', 'data.json');
+console.log(dest);
+fs.writeFileSync(dest, JSON.stringify(data), 'utf8');
