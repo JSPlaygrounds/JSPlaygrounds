@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+
+const playgroundsPath = path.join(__dirname, '..', 'playgrounds');
+const playgrounds = fs.readdirSync(playgroundsPath);
+
+const data = playgrounds.map((playground) => {
+  const playgroundPath = path.join(playgroundsPath, playground);
+  // eslint-disable-next-line
+  const config = require(path.join(playgroundPath, 'playground.json'));
+  const fileTypes = ['html', 'css', 'js'].filter(fileType => fs.existsSync(path.join(playgroundPath, `playground.${fileType}`)));
+
+  return {
+    playground,
+    fileTypes,
+    name: config.name,
+    description: config.description,
+  };
+});
