@@ -9,7 +9,7 @@ notifications:
   email: false
 before_install:
 - openssl aes-256-cbc -K $encrypted_056c956745cc_key -iv $encrypted_056c956745cc_iv
-  -in jsplaygrounds_rsa.enc -out jsplaygrounds_rsa -d
+  -in deploy_key.enc -out deploy_key -d
 script: bash ./scripts/updateData.sh
 env:
   global:
