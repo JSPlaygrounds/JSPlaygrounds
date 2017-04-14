@@ -20,6 +20,5 @@ const data = playgrounds.map((playground) => {
   };
 });
 
-const dest = path.join(__dirname, '..', 'out', 'static', 'data.json');
-console.log(dest);
+const dest = path.join(__dirname, '..', 'out', 'data', 'playgrounds.json');
 fs.writeFileSync(dest, JSON.stringify(data), 'utf8');
