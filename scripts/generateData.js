@@ -10,11 +10,9 @@ const data = playgrounds.map((playground) => {
   const playgroundPath = path.join(playgroundsPath, playground);
   // eslint-disable-next-line
   const config = require(path.join(playgroundPath, 'playground.json'));
-  const fileTypes = ['html', 'css', 'js'].filter(fileType => fs.existsSync(path.join(playgroundPath, `playground.${fileType}`)));
 
   return {
-    playground,
-    fileTypes,
+    path: playground,
     name: config.name,
     description: config.description,
   };
