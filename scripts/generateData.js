@@ -15,7 +15,8 @@ const data = playgrounds.map((playground) => {
     path: playground,
     name: config.name,
     description: config.description,
-    resources: config.resources || [],
+    externalJS: config.externalJS || [],
+    externalCSS: config.externalCSS || [],
   };
 });
 
