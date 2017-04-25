@@ -1,0 +1,7 @@
+{
+  "name": "vuejs",
+  "description": "A Vue.js Playground",
+  "externalJS": [
+    "https://unpkg.com/vue"
+  ]
+}
