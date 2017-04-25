@@ -7,10 +7,8 @@ branches:
 sudo: false
 notifications:
   email: false
-before_install:
-- openssl aes-256-cbc -K $encrypted_056c956745cc_key -iv $encrypted_056c956745cc_iv
-  -in deploy_key.enc -out deploy_key -d
-script: bash ./scripts/updateData.sh
+script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./scripts/updateData.sh; fi'
 env:
   global:
     - ENCRYPTION_LABEL: "056c956745cc"
