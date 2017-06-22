@@ -1,0 +1,8 @@
+{
+  "name": "react",
+  "description": "A ReactJS playground",
+  "externalJS": [
+    "https://unpkg.com/react@15/dist/react.min.js",
+    "https://unpkg.com/react-dom@15/dist/react-dom.min.js",
+  ],
+}
