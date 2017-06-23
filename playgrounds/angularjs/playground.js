@@ -1,7 +1,7 @@
 angular
-	.module('app', [])
-    .component('playground', {  
-  bindings: {
+  .module('app', [])
+  .component('playground', {  
+    bindings: {
     name: '@'
   },
   template: 'Hello, {{$ctrl.name}}',
